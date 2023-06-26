@@ -60,6 +60,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
         content,
         coverUrl,
         isPublic,
+        // userId: 'b6b7d0e1-3812-4e63-a42f-38b9af2830de',
         userId: request.user.sub,
       },
     })
