@@ -25,14 +25,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-
   const isAuthenticated = cookies().has('token')
   return (
     <html lang="en">
       <body
         className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-950 font-sans text-gray-100`}
       >
-
         <main className="grid min-h-screen grid-cols-2">
           {/* Left */}
           <div className="relative flex flex-col items-start justify-between overflow-hidden border-r border-white/10  bg-[url(../assets/bg-stars.svg)] bg-cover px-28 py-16">
@@ -46,7 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
           {/* Right */}
           <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
-          {/* conteudo da pagina */}
+            {/* conteúdo da pagina */}
             {children}
           </div>
         </main>

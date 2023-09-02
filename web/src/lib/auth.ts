@@ -1,10 +1,10 @@
-import { cookies } from "next/headers";
+import { cookies } from 'next/headers'
 import decode from 'jwt-decode'
 
 interface User {
-  sub: string;
-  name: string;
-  avatarUrl: string;
+  sub: string
+  name: string
+  avatarUrl: string
 }
 
 export function getUser(): User {

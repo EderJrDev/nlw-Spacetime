@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
 
   const redirectURL = new URL('/', request.url)
 
-  const cokieExpiresInSeconds = 60 * 60  * 24 * 30
+  const cokieExpiresInSeconds = 60 * 60 * 24 * 30
 
   return NextResponse.redirect(redirectURL, {
     headers: {
