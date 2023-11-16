@@ -4,7 +4,6 @@ import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
 } from 'next/font/google'
-import { EmptyMemories } from '@/components/EmptyMemories'
 import { Hero } from '@/components/Hero'
 import { Copyright } from '@/components/Copyright'
 import { SignIn } from '@/components/SignIn'
